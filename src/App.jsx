@@ -1,9 +1,19 @@
-function App() {
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
+import About from "./components/About"
+import Services from "./components/Services"
+import Porfolio from "./components/Porfolio"
+import Contact from "./components/Contact"
+
+const App = () => {
   return (
     <>
-      <h1 className="flex items-center justify-center text-4xl font-bold">
-        Hello World
-      </h1>      
+      <Navbar />
+      <Hero />
+      <About />
+      <Services />
+      <Porfolio />
+      <Contact />    
     </>
   )
 }
