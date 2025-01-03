@@ -2,6 +2,7 @@ import React from 'react';
 import { FaGithub, FaLinkedin, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter';
+import Profile from '../assets/Profile.jpg';
 
 const Hero = () => {
   return (
@@ -50,6 +51,14 @@ const Hero = () => {
             </button>
           </a>
         </div>
+      </div>
+
+      <div className='flex items-center justify-center shadow-custom-white rounded-full h-[320px] w-[320px] ml-[100px]'>
+        <img
+          src={Profile}
+          alt="Mulindi Jr."
+          className="rounded-full w-72 h-72 bg-cover bg-no-repeat bg-center"
+        />
       </div>
     </div>
   );
