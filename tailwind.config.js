@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        outfit: ['Outfit', 'sans-serif'], // Define a custom font family
+        outfit: ['Outfit', 'sans-serif'],
+      },
+      boxShadow: {
+        'custom-white': '0px 1px 0px 0px #FF69B4',
       },
     },
   },
