@@ -33,7 +33,57 @@ const About = () => {
             Education
           </button>
         </div>
-      </div>
+
+        {activeTab === 'skills' && (
+            <div>
+              <div className="mb-4">
+                <p>JavaScript (ES6+)</p>
+                <div className="w-full bg-gray-200 rounded-full h-1">
+                  <div
+                    className="bg-purple-500 h-1 rounded-full"
+                    style={{ width: '90%' }}
+                  ></div>
+                </div>
+              </div>
+              <div className="mb-4">
+                <p>React and Redux</p>
+                <div className="w-full bg-gray-200 rounded-full h-1">
+                  <div
+                    className="bg-purple-500 h-1 rounded-full"
+                    style={{ width: '85%' }}
+                  ></div>
+                </div>
+              </div>
+              <div className="mb-4">
+                <p>Node.js and Express</p>
+                <div className="w-full bg-gray-200 rounded-full h-1">
+                  <div
+                    className="bg-purple-500 h-1 rounded-full"
+                    style={{ width: '80%' }}
+                  ></div>
+                </div>
+              </div>
+              <div className="mb-4">
+                <p>MongoDB</p>
+                <div className="w-full bg-gray-200 rounded-full h-1">
+                  <div
+                    className="bg-purple-500 h-1 rounded-full"
+                    style={{ width: '75%' }}
+                  ></div>
+                </div>
+              </div>
+              <div className="mb-4">
+                <p>Tailwind CSS</p>
+                <div className="w-full bg-gray-200 rounded-full h-1">
+                  <div
+                    className="bg-purple-500 h-1 rounded-full"
+                    style={{ width: '85%' }}
+                  ></div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   )
