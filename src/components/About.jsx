@@ -83,6 +83,41 @@ const About = () => {
               </div>
             </div>
           )}
+          {activeTab === 'education' && (
+            <div className="bg-pink-50 p-4 rounded-lg shadow-lg">
+              <ul className="space-y-4">
+                <li className="flex items-start">
+                  <div className="bg-purple-500 w-4 h-4 rounded-full mt-1 mr-4"></div>
+                  <div>
+                    <p className="text-lg font-semibold text-gray-800">
+                      Bachelor's Degree in Information Technology
+                    </p>
+                    <p className="text-sm text-purple-600">Mount Kenya University</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-purple-500 w-4 h-4 rounded-full mt-1 mr-4"></div>
+                  <div>
+                    <p className="text-lg font-semibold text-gray-800">
+                      Certificate in Fullstack Development
+                    </p>
+                    <p className="text-sm text-purple-600">Moringa School</p>
+                  </div>
+                </li>
+                <li className="flex items-start">
+                  <div className="bg-purple-500 w-4 h-4 rounded-full mt-1 mr-4"></div>
+                  <div>
+                    <p className="text-lg font-semibold text-gray-800">
+                      Ongoing Learning
+                    </p>
+                    <p className="text-sm text-purple-600">
+                      Online courses and tutorials to enhance skills
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </div>
