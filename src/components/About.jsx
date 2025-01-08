@@ -8,12 +8,12 @@ const About = () => {
   return (
     <div className='mt-24 mx-44'>
       <h1 className='text-center mb-10 text-2xl'>About Me</h1>
-      <div className='flex gap-2'>
+      <div className='flex gap-2 p-4'>
         <div className=''>
-          <img src={Potrait} alt="Mulindi Jr." className='h-[420px] w-96 rounded-md'/>
+          <img src={Potrait} alt="Mulindi Jr." className='h-[450px] w-96 rounded-md'/>
         </div>
         <div className='w-1/2 rounded-md'>
-        <p className='text-xl'>I'm a full-stack developer specializing in the MERN stack (MongoDB, Express, React, Node.js). I build scalable and dynamic web applications, focusing on creating seamless user experiences. I'm always looking to learn and grow while contributing to exciting projects.</p>       
+        <p className=''>I'm a full-stack developer specializing in the MERN stack (MongoDB, Express, React, Node.js). I build scalable and dynamic web applications, focusing on creating seamless user experiences. I'm always looking to learn and grow while contributing to exciting projects.</p>       
         
         <div className='flex mb-4 mt-4'>
           <button
@@ -36,7 +36,7 @@ const About = () => {
 
         {activeTab === 'skills' && (
             <div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <p>JavaScript (ES6+)</p>
                 <div className="w-full bg-gray-200 rounded-full h-1">
                   <div
@@ -45,7 +45,7 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <p>React and Redux</p>
                 <div className="w-full bg-gray-200 rounded-full h-1">
                   <div
@@ -54,7 +54,7 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <p>Node.js and Express</p>
                 <div className="w-full bg-gray-200 rounded-full h-1">
                   <div
@@ -63,7 +63,7 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <p>MongoDB</p>
                 <div className="w-full bg-gray-200 rounded-full h-1">
                   <div
@@ -72,19 +72,37 @@ const About = () => {
                   ></div>
                 </div>
               </div>
-              <div className="mb-4">
+              <div className="mb-2">
                 <p>Tailwind CSS</p>
                 <div className="w-full bg-gray-200 rounded-full h-1">
                   <div
                     className="bg-purple-500 h-1 rounded-full"
-                    style={{ width: '85%' }}
+                    style={{ width: '90%' }}
+                  ></div>
+                </div>
+              </div>
+              <div className="mb-2">
+                <p>Next Js</p>
+                <div className="w-full bg-gray-200 rounded-full h-1">
+                  <div
+                    className="bg-purple-500 h-1 rounded-full"
+                    style={{ width: '75%' }}
+                  ></div>
+                </div>
+              </div>
+              <div className="mb-2">
+                <p>Python</p>
+                <div className="w-full bg-gray-200 rounded-full h-1">
+                  <div
+                    className="bg-purple-500 h-1 rounded-full"
+                    style={{ width: '80%' }}
                   ></div>
                 </div>
               </div>
             </div>
           )}
           {activeTab === 'education' && (
-            <div className="bg-pink-50 p-4 rounded-lg shadow-lg">
+            <div className="bg-purple-300 p-4 rounded-lg shadow-lg">
               <ul className="space-y-4">
                 <li className="flex items-start">
                   <div className="bg-purple-500 w-4 h-4 rounded-full mt-1 mr-4"></div>
