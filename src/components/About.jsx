@@ -6,7 +6,7 @@ const About = () => {
   const [activeTab, setActiveTab] = useState('skills');
 
   return (
-    <div className='mt-24 mx-44'>
+    <div id='about' className='mt-24 mx-44'>
       <h1 className='text-center mb-10 text-2xl'>About Me</h1>
       <div className='flex gap-2 p-4'>
         <div className=''>

@@ -6,7 +6,7 @@ import Profile from '../assets/Profile.jpg';
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-around mt-36 mx-44">
+    <div id='home' className="flex items-center justify-around mt-36 mx-44">
       <div className="flex flex-col space-y-6">
 
         <div className="flex space-x-2 text-xl">

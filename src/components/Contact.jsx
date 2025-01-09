@@ -26,7 +26,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className='mt-24 mx-44'>
+    <div id='contact' className='mt-24 mx-44'>
       <h1 className='text-center text-2xl mb-10'>Get in Touch</h1>
       <div className="flex flex-col sm:flex-row justify-between gap-8 mb-12">
         <div className="space-y-8 sm:w-1/3"> 

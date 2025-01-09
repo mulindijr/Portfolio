@@ -4,7 +4,7 @@ import Medilab from '../assets/Medilab.PNG'
 
 const Porfolio = () => {
   return (
-    <div className='mt-24 mx-44'>
+    <div id='porfolio' className='mt-24 mx-44'>
       <h1 className='text-center text-2xl mb-10'>Portfolio</h1>
       <p className='text-center mb-8'>My portfolio showcases a collection of projects that reflect my skills, creativity, and expertise as a full-stack developer. Each project highlights my ability to design and develop user-friendly interfaces, implement robust back-end solutions, and deliver innovative digital experiences. Explore my work to see how I bring ideas to life through technology.</p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>

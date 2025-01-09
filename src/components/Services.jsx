@@ -2,7 +2,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div className='mt-24 mx-44'>
+    <div id='services' className='mt-24 mx-44'>
       <h1 className='text-center mb-10 text-2xl'>Services</h1>
       <p className='text-center'>I specialize in providing high-quality services tailored to meet your needs. From building stunning websites to creating engaging content and implementing cutting-edge AI solutions, I’m here to bring your ideas to life. Let’s explore my services and discover how I can help you achieve your goals.</p>
       <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10'>
