@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaFacebook, FaWhatsapp } from 'react-icons/fa';
 import { FaXTwitter } from "react-icons/fa6";
 import { Typewriter } from 'react-simple-typewriter';
 import Profile from '../assets/Profile.jpg';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
   return (
@@ -42,7 +43,7 @@ const Hero = () => {
         
         <div className="flex space-x-4">
           <button className="py-3 px-6 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-lg">
-            Connect with me
+            <AnchorLink href='#contact' offset={50}>Connect with me</AnchorLink>
           </button>
 
           <a href="Mulindi.pdf" download = "Mulindi.pdf">
