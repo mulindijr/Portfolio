@@ -5,7 +5,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState('home')
 
   return (
-    <div className='flex justify-between items-center mt-5 mx-44'>
+    <div className='flex justify-between items-center p-4 mx-44 sticky top-0 z-50 bg-[#161513]'>
       <h1 className='cursor-pointer text-4xl font-semibold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'><AnchorLink href='#home'>Mulindi Jr.</AnchorLink></h1>
       <ul className='flex space-x-10 text-[20px]'>
         <li className={`cursor-pointer ${menu==='home' ? 'text-pink-500' : 'text-white'}`}onClick={() => setMenu('home')}> <AnchorLink href='#home'>Home</AnchorLink></li>
