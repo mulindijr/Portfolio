@@ -7,7 +7,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const Hero = () => {
   return (
-    <div id='home' className="flex items-center justify-around pt-36 mx-44">
+    <div id='home' className="flex items-center justify-around pt-36 mx-44 mb-48">
       <div className="flex flex-col space-y-6">
 
         <div className="flex space-x-2 text-xl">
