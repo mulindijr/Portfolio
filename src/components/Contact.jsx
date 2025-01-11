@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { FaMapMarkerAlt } from 'react-icons/fa';
 import { TfiEmail } from 'react-icons/tfi';
 import { BsPhone } from 'react-icons/bs';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -22,10 +24,12 @@ const Contact = () => {
 
     if (data.success) {
       setResult("Form Submitted Successfully");
+      toast.success("Message sent successfully!");
       event.target.reset();
     } else {
       console.log("Error", data);
       setResult(data.message);
+      toast.error("Failed to send the message. Please try again.");
     }
   };
   return (
@@ -110,6 +114,7 @@ const Contact = () => {
           </button>
         </form>
       </div>
+      <ToastContainer />
     </div>
   );
 };
