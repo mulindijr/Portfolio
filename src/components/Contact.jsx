@@ -3,27 +3,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa';
 import { TfiEmail } from 'react-icons/tfi';
 import { BsPhone } from 'react-icons/bs';
 
-const ContactUs = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle form submission logic here
-    console.log('Form submitted:', formData);
-  };
+const Contact = () => {
 
   return (
     <div id='contact' className='mt-24 mx-44'>
@@ -60,49 +40,41 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <form onSubmit={handleSubmit} className="md:w-2/3 bg-purple-300 p-8 rounded-lg shadow-lg">
+        <form className="md:w-2/3 bg-purple-300 p-8 rounded-lg shadow-lg">
           <div className="flex flex-col md:flex-row gap-6 mb-4">
             <input
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-700 focus:outline-none"
+              className="w-full px-4 text-black py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-700 focus:outline-none"
               placeholder="Your Name"
               type="text"
               id="name"
               name="name"
-              value={formData.name}
-              onChange={handleChange}
               required
             />
 
             <input
-              className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-700 focus:outline-none"
+              className="w-full px-4 text-black py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-700 focus:outline-none"
               placeholder="Your Email"
               type="email"
               id="email"
               name="email"
-              value={formData.email}
-              onChange={handleChange}
               required
             />
           </div>
 
           <input
-            className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg focus:ring-2 ring-purple-700 focus:outline-none"
+            className="w-full px-4 text-black py-2 mb-4 border border-gray-300 rounded-lg focus:ring-2 ring-purple-700 focus:outline-none"
             placeholder="Subject"
             type="text"
             id="subject"
             name="subject"
-            value={formData.subject}
-            onChange={handleChange}
             required
           />
 
           <textarea
-            className="w-full px-4 py-2 mb-4 border border-gray-300 rounded-lg focus:ring-2 ring-purple-700 focus:outline-none"
+            className="w-full px-4 text-black py-2 mb-4 border border-gray-300 rounded-lg focus:ring-2 ring-purple-700 focus:outline-none"
             placeholder="Message"
             id="message"
             name="message"
-            value={formData.message}
-            onChange={handleChange}
             rows="5"
             required
           ></textarea>
@@ -119,4 +91,4 @@ const ContactUs = () => {
   );
 };
 
-export default ContactUs;
+export default Contact;
