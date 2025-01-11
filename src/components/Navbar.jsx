@@ -14,7 +14,7 @@ const Navbar = () => {
         <li className={`cursor-pointer ${menu==='portfolio' ? 'text-pink-500' : 'text-white'}`}onClick={() => setMenu('portfolio')}> <AnchorLink href='#porfolio' offset={50}>Porfolio</AnchorLink></li>
         <li className={`cursor-pointer ${menu==='contact' ? 'text-pink-500' : 'text-white'}`}onClick={() => setMenu('contact')}> <AnchorLink href='#contact' offset={50}>Contact</AnchorLink></li>
       </ul>
-      <button className="py-3 px-6 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-lg"><AnchorLink href='#contact' offset={50}>Connect With Me</AnchorLink></button>
+      <AnchorLink href='#contact' offset={50}><button className="py-3 px-6 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-lg">Connect With Me</button></AnchorLink>
     </div>
   )
 }
