@@ -4,7 +4,30 @@ import { TfiEmail } from 'react-icons/tfi';
 import { BsPhone } from 'react-icons/bs';
 
 const Contact = () => {
+  const [result, setResult] = useState("");
 
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "5165c909-4623-47d9-b845-289d701649df");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Form Submitted Successfully");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <div id='contact' className='mt-24 mx-44'>
       <h1 className='text-center text-2xl mb-10'>Get in Touch</h1>
@@ -40,7 +63,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <form className="md:w-2/3 bg-purple-300 p-8 rounded-lg shadow-lg">
+        <form onSubmit={onSubmit} className="md:w-2/3 bg-purple-300 p-8 rounded-lg shadow-lg">
           <div className="flex flex-col md:flex-row gap-6 mb-4">
             <input
               className="w-full px-4 text-black py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-700 focus:outline-none"
