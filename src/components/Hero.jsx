@@ -42,9 +42,7 @@ const Hero = () => {
         </div>
         
         <div className="flex space-x-4">
-          <button className="py-3 px-6 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-lg">
-            <AnchorLink href='#contact' offset={50}>Connect with me</AnchorLink>
-          </button>
+          <AnchorLink href='#contact' offset={50}><button className="py-3 px-6 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-lg">Connect With Me</button></AnchorLink>
 
           <a href="Mulindi.pdf" download = "Mulindi.pdf">
             <button className="py-3 px-6 rounded-full border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-lg">
