@@ -3,19 +3,31 @@ import { Link } from 'react-scroll';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
+  const [mobileMenu, setMobileMenu] = useState(false);
 
   const handleSetActive = (to) => {
     setActiveSection(to);
   };
 
+  const toggleMenu = () => {
+    setMobileMenu(!mobileMenu)
+  }
+
   return (
-    <div className='flex justify-between items-center p-4 mx-44 sticky top-0 z-50 bg-[#161513]'>
-      <h1 className='cursor-pointer text-4xl font-semibold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'>
+    <div className='flex justify-between items-center p-4 mx-4 sm:mx-44 sticky top-0 z-50 bg-[#161513]'>
+      <h1 className='cursor-pointer text-2xl sm:text-4xl font-semibold bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'>
         <Link to="home" smooth={true} duration={1500} spy={true} onSetActive={() => handleSetActive('home')}>
           Mulindi Jr.
         </Link>
       </h1>
-      <ul className='flex space-x-10 text-[20px]'>
+
+      <div className='sm:hidden'>
+        <button onClick={toggleMenu} className='text-white'>
+          {mobileMenu ? 'x' : '☰'}
+        </button>
+      </div>
+
+      <ul className= {`${mobileMenu ? 'flex' : 'hidden' } flex flex-col sm:flex-row sm:space-x-10 space-y-4 sm:space-y-0 text-[20px]'`}>
         <li className={`cursor-pointer ${activeSection === 'home' ? 'text-pink-500' : 'text-white'}`}>
           <Link to="home" smooth={true} duration={1500} spy={true} onSetActive={() => handleSetActive('home')}>
             Home
