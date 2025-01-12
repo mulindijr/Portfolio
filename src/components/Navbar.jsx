@@ -21,19 +21,21 @@ const Navbar = () => {
         </Link>
       </h1>
 
-      {/* Mobile: Connect With Me Button */}
-      <div className='sm:hidden'>
-        <Link to="contact" smooth={true} duration={1500} spy={true} offset={-100}>
-          <button className="py-2 px-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-sm">
-            Connect With Me
-          </button>
-        </Link>
-      </div>
+      <div className='flex items-center space-x-2'>
+        {/* Mobile: Connect With Me Button */}
+        <div className='sm:hidden'>
+          <Link to="contact" smooth={true} duration={1500} spy={true} offset={-100}>
+            <button className="py-2 px-4 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-sm">
+              Connect With Me
+            </button>
+          </Link>
+        </div>
 
-      <div className='sm:hidden'>
-        <button onClick={toggleMenu} className='text-white'>
-          {mobileMenu ? 'x' : '☰'}
-        </button>
+        <div className='sm:hidden'>
+          <button onClick={toggleMenu} className='text-white'>
+            {mobileMenu ? 'x' : '☰'}
+          </button>
+        </div>
       </div>
 
       <ul className= {`${mobileMenu ? 'flex' : 'hidden' } sm:flex flex-col sm:flex-row sm:space-x-10 space-y-4 sm:space-y-0 text-[20px]'`}>
