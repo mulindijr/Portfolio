@@ -63,11 +63,14 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <Link to="contact" smooth={true} duration={1500} spy={true} offset={-100}>
-        <button className="py-3 px-6 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-lg">
-          Connect With Me
-        </button>
-      </Link>
+      {/* Desktop: Connect With Me Button */}
+      <div className='hidden sm:block'>
+        <Link to="contact" smooth={true} duration={1500} spy={true} offset={-100}>
+          <button className="py-3 px-6 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-lg">
+            Connect With Me
+          </button>
+        </Link>
+      </div>
     </div>
   );
 };
