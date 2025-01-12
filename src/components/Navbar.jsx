@@ -36,7 +36,7 @@ const Navbar = () => {
         </button>
       </div>
 
-      <ul className= {`${mobileMenu ? 'flex' : 'hidden' } flex flex-col sm:flex-row sm:space-x-10 space-y-4 sm:space-y-0 text-[20px]'`}>
+      <ul className= {`${mobileMenu ? 'flex' : 'hidden' } sm:flex flex-col sm:flex-row sm:space-x-10 space-y-4 sm:space-y-0 text-[20px]'`}>
         <li className={`cursor-pointer ${activeSection === 'home' ? 'text-pink-500' : 'text-white'}`}>
           <Link to="home" smooth={true} duration={1500} spy={true} onSetActive={() => handleSetActive('home')}>
             Home
