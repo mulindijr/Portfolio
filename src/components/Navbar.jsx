@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -32,8 +33,8 @@ const Navbar = () => {
         </div>
 
         <div className='sm:hidden'>
-          <button onClick={toggleMenu} className='text-white'>
-            {mobileMenu ? 'x' : '☰'}
+          <button onClick={toggleMenu} className='text-white text-2xl'>
+            {mobileMenu ? <FaTimes /> : <FaBars />}
           </button>
         </div>
       </div>
