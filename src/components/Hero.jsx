@@ -7,7 +7,7 @@ import { Link } from 'react-scroll';
 
 const Hero = () => {
   return (
-    <div id='home' className="flex items-center justify-around pt-36 mx-44 mb-48">
+    <div id='home' className="flex flex-col mx-8 pt-36 mb-36 sm:flex-row sm:items-center sm:justify-around sm:pt-36 sm:mx-44 sm:mb-48">
       <div className="flex flex-col space-y-6">
 
         <div className="flex space-x-2 text-xl">
@@ -28,10 +28,10 @@ const Hero = () => {
           </a>
         </div>
 
-        <h1 className="text-4xl font-bold leading-tight">
+        <h1 className="text-3xl sm:text-4xl font-bold leading-tight">
           Hello, I'm <span className="bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent">Mulindi Jr.</span>
         </h1>
-        <div className="text-3xl font-bold text-pink-500 font-outfit" style={{ height: '50px' }} >
+        <div className="text-2xl sm:text-3xl font-bold text-pink-500 font-outfit" style={{ height: '50px' }} >
           <Typewriter
             words={['Fullstack Developer 💻', 'MERN Stack Engineer 🌐', 'Tech Enthusiast 🚀', 'Cross-Platform Dev 📱']}
             loop={Infinity}          
@@ -43,19 +43,19 @@ const Hero = () => {
         
         <div className="flex space-x-4">
           <Link to="contact" smooth={true} duration={1500} spy={true} offset={-100}>
-            <button className="py-3 px-6 rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white text-lg">
+            <button className="py-2 px-3 sm:py-3 sm:px-6 text-sm rounded-full bg-gradient-to-r from-pink-500 to-purple-500 hover:bg-gradient-to-l hover:from-red-500 hover:to-green-500 transition text-white sm:text-lg">
               Connect With Me
             </button>
           </Link>
           <a href="Mulindi.pdf" download = "Mulindi.pdf">
-            <button className="py-3 px-6 rounded-full border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white text-lg">
+            <button className="py-2 px-3 text-sm sm:py-3 sm:px-6 rounded-full border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white sm:text-lg">
               Get Resume
             </button>
           </a>
         </div>
       </div>
 
-      <div className='flex items-center justify-center shadow-custom-white rounded-full h-[320px] w-[320px] ml-[100px]'>
+      <div className='hidden sm:flex items-center justify-center shadow-custom-white rounded-full h-[320px] w-[320px] ml-[100px]'>
         <img
           src={Profile}
           alt="Mulindi Jr."
