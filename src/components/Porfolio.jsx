@@ -8,7 +8,7 @@ const projects = [
     "name": "Tech Haven",
     "description": "Tech Haven is a one-stop destination for the latest and greatest in electronic devices. Our goal is to provide you with a seamless shopping experience, offering a wide range of products at competitive prices.",
     "image": TechHaven,
-    "technologies": ["React", "Tailwind CSS", "Express Js", "Mongo DB", "Node Js"],
+    "technologies": ["React", "Tailwind CSS", "Express.js", "MongoDB", "Node.js"],
     "liveUrl": "https://techhaven-rho.vercel.app/",
     "githubUrl": "https://github.com/mulindijr/Tech-Haven"
   },
@@ -25,8 +25,8 @@ const projects = [
 
 const Portfolio = () => {
   return (
-    <div id='portfolio' className='mt-24 mx-44'>
-      <h1 className='text-center text-2xl mb-10'>Portfolio</h1>
+    <div id='portfolio' className='mt-10 mx-8 sm:mt-24 sm:mx-44'>
+      <h1 className='text-center text-2xl mb-6 sm:mb-10'>Portfolio</h1>
       <p className='text-center mb-8'>
         My portfolio showcases a collection of projects that reflect my skills, creativity, and expertise as a full-stack developer. 
         Each project highlights my ability to design and develop user-friendly interfaces, implement robust back-end solutions, 
@@ -39,7 +39,7 @@ const Portfolio = () => {
             <div className='bg-purple-800 p-2'>
               <h2 className='mb-2 text-xl'>{project.name}</h2>
               <p>{project.description}</p>
-              <div className='flex gap-4'>
+              <div className='flex flex-wrap gap-1 sm:gap-4'>
                 {project.technologies.map((tech, index) => (
                   <p
                     key={index}
@@ -56,7 +56,7 @@ const Portfolio = () => {
                   target='_blank'
                   rel='noopener noreferrer'
                 >
-                  Live Url
+                  Live Demo
                 </a>
                 <a
                   href={project.githubUrl}
