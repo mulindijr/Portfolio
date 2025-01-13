@@ -2,10 +2,10 @@ import React from 'react'
 
 const Services = () => {
   return (
-    <div id='services' className='mt-24 mx-44'>
-      <h1 className='text-center mb-10 text-2xl'>Services</h1>
+    <div id='services' className='mt-6 mx-8 sm:mt-24 sm:mx-44'>
+      <h1 className='text-center mb-4 sm:mb-10 text-2xl'>Services</h1>
       <p className='text-center'>I specialize in providing high-quality services tailored to meet your needs. From building stunning websites to creating engaging content and implementing cutting-edge AI solutions, I’m here to bring your ideas to life. Let’s explore my services and discover how I can help you achieve your goals.</p>
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-10'>
+      <div className='grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-10 mt-10'>
         <div>
           <h2 className='mb-2 text-2xl bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text text-transparent'>Web Development</h2>
           <p>I specialize in front-end and back-end development, ensuring that your website is functional, user-friendly, and visually appealing.</p>
