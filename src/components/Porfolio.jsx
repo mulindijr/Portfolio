@@ -47,10 +47,8 @@ const Portfolio = () => {
   return (
     <div id='portfolio' className='mt-10 mx-8 sm:mt-24 sm:mx-44'>
       <h1 className='text-center text-2xl mb-6 sm:mb-10'>Portfolio</h1>
-      <p className='text-center mb-8'>
-        My portfolio showcases a collection of projects that reflect my skills, creativity, and expertise as a full-stack developer. 
-        Each project highlights my ability to design and develop user-friendly interfaces, implement robust back-end solutions, 
-        and deliver innovative digital experiences. Explore my work to see how I bring ideas to life through technology.
+      <p className='text-start sm:text-center mb-8'>
+        My portfolio showcases projects that highlight my skills in creating user-friendly interfaces and robust  back-end solutions. Explore my work to see how I bring ideas to life through technology.
       </p>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {projects.map((project) => (
