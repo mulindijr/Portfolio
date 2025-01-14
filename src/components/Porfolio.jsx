@@ -1,6 +1,8 @@
 import React from 'react';
 import TechHaven from '../assets/TechHaven.PNG';
 import Medilab from '../assets/Medilab.PNG';
+import PizzaRestaurant from '../assets/PizzaRestaurant.PNG';
+import BookLibrary from '../assets/BookLibrary.PNG';
 
 const projects = [
   {
@@ -17,10 +19,28 @@ const projects = [
     "name": "Medilab",
     "description": "MediLab is a modern healthcare platform dedicated to providing reliable medical services, advanced diagnostics, and personalized care. MediLab ensures accurate results, timely consultations, and a patient-centered approach to health and wellness.",
     "image": Medilab,
-    "technologies": ["React", "Custom CSS"],
+    "technologies": ["React", "Vanilla CSS"],
     "liveUrl": "https://medilab-hosp.vercel.app/",
     "githubUrl": "https://github.com/mulindijr/Medilab"
-  }
+  },
+  {
+    "id": 3,
+    "name": "Pizza Restaurant",
+    "description": "This is a full-stack web application for managing pizza restaurants. The application allows users to view a list of restaurants, see details of a specific restaurant, view available pizzas, and create new restaurant-pizza associations.",
+    "image": PizzaRestaurant,
+    "technologies": ["React", "Vanilla CSS", "Python", "Flask", "SQL"],
+    "liveUrl": "https://github.com/mulindijr/Pizza-Restaurants",
+    "githubUrl": "https://github.com/mulindijr/Pizza-Restaurants"
+  },
+  {
+    "id": 4,
+    "name": "Book Library",
+    "description": "Book Library is a simple command-line application for managing a library of books. Users can add books, view their own books, delete books, delete users, and update user, book, or genre names.Only admins can view all users and their books.",
+    "image": BookLibrary,
+    "technologies": ["Python", "SQLAlchemy"],
+    "liveUrl": "https://github.com/mulindijr/Book-Library",
+    "githubUrl": "https://github.com/mulindijr/Book-Library"
+    }
 ];
 
 const Portfolio = () => {
