@@ -34,7 +34,7 @@ const projects = [
     id: 2,
     name: "Medilab",
     description:
-      "MediLab is a modern healthcare platform dedicated to providing reliable medical services, advanced diagnostics, and personalized care. MediLab ensures accurate results, timely consultations, and a patient-centered approach to health and wellness.",
+      "MediLab is a modern healthcare platform dedicated to providing reliable medical services, advanced diagnostics, and personalized care. MediLab ensures timely consultations and a patient-centered approach to health and wellness.",
     image: Medilab,
     technologies: ["React", "Vanilla CSS"],
     liveUrl: "https://medilab-hosp.vercel.app/",
@@ -72,7 +72,7 @@ const Portfolio = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {projects.map((project) => (
           <div key={project.id}>
-            <img src={project.image} alt={project.name} />
+            <img src={project.image} alt={project.name} className="h-48 sm:h-64 w-full"/>
             <div className='bg-purple-800 p-2'>
               <h2 className='mb-2 text-xl'>{project.name}</h2>
               <p>{project.description}</p>
