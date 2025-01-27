@@ -47,7 +47,7 @@ const Hero = () => {
               Connect With Me
             </button>
           </Link>
-          <a href="Mulindi.pdf" download = "Mulindi.pdf">
+          <a href="Brian Mulindi CV.pdf" download = "Brian Mulindi CV">
             <button className="py-2 px-3 text-sm sm:py-3 sm:px-6 rounded-full border border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white sm:text-lg">
               Get Resume
             </button>
