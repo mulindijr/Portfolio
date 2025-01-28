@@ -10,7 +10,7 @@ const Hero = () => {
     <div id='home' className="flex flex-col mx-8 pt-56 mb-56 sm:flex-row sm:items-center sm:justify-around sm:pt-36 sm:mx-44 sm:mb-48">
       <div className="flex flex-col space-y-6">
 
-        <div className="flex space-x-2 text-xl">
+        <div className="flex space-x-2 text-xl sm:text-2xl">
           <a href="https://github.com/mulindijr" target="_blank" rel="noopener noreferrer" className="hover:text-pink-500">
             <FaGithub />
           </a>
