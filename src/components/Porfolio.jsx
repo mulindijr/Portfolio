@@ -81,6 +81,7 @@ const Portfolio = () => {
                   <p
                     key={index}
                     className='border rounded-lg p-1 mt-2 bg-slate-100'
+                    title={tech} 
                   >
                     {techIcons[tech] || tech}
                   </p>
