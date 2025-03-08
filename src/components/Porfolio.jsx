@@ -72,7 +72,7 @@ const Portfolio = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
         {projects.map((project) => (
           <div key={project.id}>
-            <img src={project.image} alt={project.name} className="h-48 sm:h-64 w-full"/>
+            <img src={project.image} alt={project.name} loading='lazy' className="h-48 sm:h-64 w-full"/>
             <div className='bg-purple-800 p-2'>
               <h2 className='mb-2 text-xl'>{project.name}</h2>
               <p>{project.description}</p>

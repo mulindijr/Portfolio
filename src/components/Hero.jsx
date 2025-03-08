@@ -60,6 +60,7 @@ const Hero = () => {
           src={Profile}
           alt="Mulindi Jr."
           className="rounded-full w-72 h-72 bg-cover bg-no-repeat bg-center"
+          loading='lazy'
         />
       </div>
     </div>

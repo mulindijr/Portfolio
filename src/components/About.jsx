@@ -10,7 +10,7 @@ const About = () => {
       <h1 className='text-center mb-4 sm:mb-10 text-2xl'>About Me</h1>
       <div className='flex-col sm:flex sm:flex-row gap-2 p-4'>
         <div className=''>
-          <img src={Potrait} alt="Mulindi Jr." className='h-80 sm:h-[450px] w-96 rounded-md'/>
+          <img src={Potrait} alt="Mulindi Jr." loading='lazy' className='h-80 sm:h-[450px] w-96 rounded-md'/>
         </div>
         <div className='w-full sm:w-1/2 rounded-md'>
         <p className='mt-2 sm:mt-0'>I'm a full-stack developer specializing in the MERN stack (MongoDB, Express, React, Node.js). I build scalable and dynamic web applications, focusing on creating seamless user experiences. I'm always looking to learn and grow while contributing to exciting projects.</p>       
