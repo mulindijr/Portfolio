@@ -5,6 +5,7 @@ import TechHaven from '../assets/TechHaven.PNG';
 import Medilab from '../assets/Medilab.PNG';
 import PizzaRestaurant from '../assets/PizzaRestaurant.PNG';
 import BookLibrary from '../assets/BookLibrary.PNG';
+import TechHavenAdmin from '../assets/Tech Haven Admin Panel.PNG';
 
 const techIcons = {
   React: <FaReact className="text-blue-500 text-2xl" />,
@@ -32,6 +33,16 @@ const projects = [
   },
   {
     id: 2,
+    name: "Tech Haven Admin Panel",
+    description:
+      "The Tech Haven Admin Panel is your all-in-one hub for managing everything behind the scenes. Built to be intuitive and efficient, it empowers administrators to effortlessly oversee sales, manage inventory, and gain insights from customer data all in one place.",
+    image: TechHavenAdmin,
+    technologies: ["React", "Tailwind CSS", "Express.js", "MongoDB", "Node.js"],
+    liveUrl: "https://tech-haven-admin.vercel.app/",
+    githubUrl: "https://github.com/mulindijr/Tech-Haven/tree/main/admin" 
+  },
+  {
+    id: 3,
     name: "Medilab",
     description:
       "MediLab is a modern healthcare platform dedicated to providing reliable medical services, advanced diagnostics, and personalized care. MediLab ensures timely consultations and a patient-centered approach to health and wellness.",
@@ -41,7 +52,7 @@ const projects = [
     githubUrl: "https://github.com/mulindijr/Medilab",
   },
   {
-    id: 3,
+    id: 4,
     name: "Pizza Restaurant",
     description:
       "This is a full-stack web application for managing pizza restaurants. The application allows users to view a list of restaurants, see details of a specific restaurant, view available pizzas, and create new restaurant-pizza associations.",
@@ -51,7 +62,7 @@ const projects = [
     githubUrl: "https://github.com/mulindijr/Pizza-Restaurants",
   },
   {
-    id: 4,
+    id: 5,
     name: "Book Library",
     description:
       "Book Library is a simple command-line application for managing a library of books. Users can add books, view their own books, delete books, delete users, and update user, book, or genre names.Only admins can view all users and their books.",
