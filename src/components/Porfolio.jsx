@@ -28,7 +28,7 @@ const projects = [
       "Tech Haven is a one-stop destination for the latest and greatest in electronic devices. Our goal is to provide you with a seamless shopping experience, offering a wide range of products at competitive prices.",
     image: TechHaven,
     technologies: ["React", "Tailwind CSS", "Express.js", "MongoDB", "Node.js"],
-    liveUrl: "https://techhaven-rho.vercel.app/",
+    liveUrl: "https://tech-haven-frontend.vercel.app/",
     githubUrl: "https://github.com/mulindijr/Tech-Haven",
   },
   {
