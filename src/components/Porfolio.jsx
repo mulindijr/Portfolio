@@ -6,6 +6,7 @@ import Medilab from '../assets/Medilab.PNG';
 import PizzaRestaurant from '../assets/PizzaRestaurant.PNG';
 import BookLibrary from '../assets/BookLibrary.PNG';
 import TechHavenAdmin from '../assets/Tech Haven Admin Panel.PNG';
+import GreenEarth from '../assets/green-earth.PNG';
 
 const techIcons = {
   React: <FaReact className="text-blue-500 text-2xl" />,
@@ -43,6 +44,16 @@ const projects = [
   },
   {
     id: 3,
+    name: "Green Earth",
+    description:
+      "Green Earth is a modern platform designed to promote global environmental awareness. It highlights reforestation, ocean cleanup, renewable energy, etc. It combines engaging content with a clean, accessible, and responsive design.",
+    image: GreenEarth,
+    technologies: ["React", "Tailwind CSS"],
+    liveUrl: "https://green-earth-mu.vercel.app",
+    githubUrl: "https://github.com/mulindijr/green-earth",
+  },
+  {
+    id: 4,
     name: "Medilab",
     description:
       "MediLab is a modern healthcare platform dedicated to providing reliable medical services, advanced diagnostics, and personalized care. MediLab ensures timely consultations and a patient-centered approach to health and wellness.",
@@ -52,7 +63,7 @@ const projects = [
     githubUrl: "https://github.com/mulindijr/Medilab",
   },
   {
-    id: 4,
+    id: 5,
     name: "Pizza Restaurant",
     description:
       "This is a full-stack web application for managing pizza restaurants. The application allows users to view a list of restaurants, see details of a specific restaurant, view available pizzas, and create new restaurant-pizza associations.",
@@ -62,7 +73,7 @@ const projects = [
     githubUrl: "https://github.com/mulindijr/Pizza-Restaurants",
   },
   {
-    id: 5,
+    id: 6,
     name: "Book Library",
     description:
       "Book Library is a simple command-line application for managing a library of books. Users can add books, view their own books, delete books, delete users, and update user, book, or genre names.Only admins can view all users and their books.",
